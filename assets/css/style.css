@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2{
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    border-radius: 50%;
+    border: solid 2.5px #E8EBE4;
+}
+
+/* Contenedor de ambas secciones */
+#container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* contenedor sección estado + nuevo chat + chats */
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    margin: 0;
+    width: 300px;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #E8EBE4;
+
+}
+
+.tarjeta { /* tarjeta general */
+    display: flex;
+    padding: 1rem;
+}
+
+.estado img { /* tamaño para foto perfil estado */
+    width: 40px;
+}
+
+aside h2 {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+aside p {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.estado { /* borde inferior para contenedor estado de usuario */
+    border-bottom: solid 1px #E8EBE4;
+}
+
+/* estilo para el botón en cada estado */
+.btn-nuevo-chat { 
+    background-color: #A491D2;
+    color: #FFFFFF;
+    margin: 5%;
+    border: 0;
+    padding: 10px 40px;
+}
+
+.btn-nuevo-chat:hover {
+    background-color: #CBBFEA;
+}
+
+.btn-nuevo-chat:focus {
+    background-color: #BEC1BB;
+}
+/* -------- */
+
+.chat { /* tarjeta para cada chat */
+    border-top: solid 1px #E8EBE4;
+}
+
+.chat img { /* tamaño para foto perfil contactos */
+    width: 50px;
+}
+
+.chat p {
+    font-size: 1rem;
+    color: #444749;
+}
+
+/* contenedor de la sección principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8EBE4;
+    flex-grow: 1;
+}
+
+main img { /* imagen logo del servicio */
+    border-radius: 0%;
+    border:none;
+    width: 25%;
+    margin-bottom: 1%;
+}
